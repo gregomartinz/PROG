@@ -1,0 +1,28 @@
+package once;
+
+public class Personas {
+
+	private String nombre;
+	private int numSorteo;
+	
+	public Personas (String nombre, int numSorteo){
+		this.nombre=nombre;
+		this.numSorteo=numSorteo;
+	}
+	
+	public String getNombre(){
+		return nombre;
+	}
+	
+	public void setNombre (String nombre){
+		this.nombre=nombre;
+	}
+	
+	public int getNumSorteo(){
+		return numSorteo;
+	}
+	
+	public void setNumSorteo(int numSorteo){
+		this.numSorteo=numSorteo;
+	}
+}

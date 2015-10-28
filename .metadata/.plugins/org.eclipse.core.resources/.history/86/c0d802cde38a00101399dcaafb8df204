@@ -1,0 +1,16 @@
+package aquinas;
+
+public class PruebaAlternativa {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Torre t = new Torre();
+		t.toString();
+		
+	}
+
+}

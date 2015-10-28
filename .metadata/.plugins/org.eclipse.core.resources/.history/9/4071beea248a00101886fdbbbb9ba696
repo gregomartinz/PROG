@@ -1,0 +1,18 @@
+package es.upm.dit.prog.lab4;
+
+public class Prueba {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		Ventana v = new Ventana(1024,768);
+		PintarAntenasRegion p = new PintarAntenasRegion();
+		while(true){
+			p.pi
+		}
+
+	}
+
+}

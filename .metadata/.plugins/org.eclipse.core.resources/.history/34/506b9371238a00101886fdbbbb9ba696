@@ -1,0 +1,19 @@
+package es.upm.dit.prog.p5;
+
+import java.io.IOException;
+
+public class Probar {
+
+	/**
+	 * @param args
+	 * @throws InterruptedException 
+	 */
+	public static void main(String[] args) throws InterruptedException {
+		
+		for(int i=0;i<100000;i++){
+			System.out.println(i);
+	Thread.sleep(11900);
+
+		}
+	}
+}

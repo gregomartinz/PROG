@@ -1,0 +1,23 @@
+package aquinas;
+
+import java.util.ArrayList;
+
+public class Torre  {
+
+	private ArrayList<Habitacion> torre;
+	
+	public Torre () {
+
+		
+		torre = new ArrayList<Habitacion>();
+	}
+	public ArrayList<Habitacion> getTorre (){
+		
+		return torre;
+		
+	}
+	public void setTorre(ArrayList<Habitacion> torre){
+		this.torre = torre;
+		
+	}
+}

@@ -1,0 +1,13 @@
+package aquinas;
+
+public class Habitacion {
+	
+	private int num;
+	
+	public Habitacion (int num){
+	
+		this.num = num;
+		
+	}
+
+}

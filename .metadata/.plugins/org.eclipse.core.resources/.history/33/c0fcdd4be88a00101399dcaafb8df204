@@ -1,0 +1,51 @@
+package aquinas;
+
+public class PruebaAlternativa {
+
+	/**
+	 * @param args
+	 * @throws Exception 
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Torre t = new Torre();
+		
+		//1
+		Habitacion cientouno = new Habitacion (101, "");
+		Habitacion cientodos = new Habitacion (102,"") ;
+		Habitacion cientotres = new Habitacion (103,"");
+		Habitacion cientocuatro = new Habitacion (104,"");
+		Habitacion cientocinco = new Habitacion (105,"");
+		Habitacion cientoseis = new Habitacion (106,"");
+		Habitacion cientosiete = new Habitacion (107,"");
+		Habitacion cientoocho = new Habitacion (108,"");
+		Habitacion cientonueve = new Habitacion (109,"");
+		Habitacion cientodiez = new Habitacion (110,"");
+		Habitacion cientoonce = new Habitacion (111,"");
+		Habitacion cientodoce = new Habitacion (112,"");
+		Habitacion cientoun = new Habitacion (101, "");
+		Habitacion cientodo = new Habitacion (112,"") ;
+		
+		HomHab h11 = new HomHab (cientouno,cientodoce);
+		HomHab h12 = new HomHab (cientodos,cientoonce);
+		HomHab h13 = new HomHab (cientotres,cientodiez);
+		HomHab h14 = new HomHab (cientocuatro,cientonueve);
+		HomHab h15 = new HomHab (cientocinco,cientoocho);
+		HomHab h16 = new HomHab (cientoseis,cientosiete);
+		HomHab hp = new HomHab (cientoun,cientodo);
+		
+		t.anadirHomHab(h11);
+		t.anadirHomHab(h12);
+		t.anadirHomHab(h13);
+		t.anadirHomHab(h14);
+		t.anadirHomHab(h15);
+		t.anadirHomHab(h16);
+		t.anadirHomHab(hp);
+		
+		
+		t.toString();
+		
+	}
+
+}

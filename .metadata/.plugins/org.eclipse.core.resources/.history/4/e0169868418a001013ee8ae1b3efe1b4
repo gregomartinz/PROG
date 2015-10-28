@@ -1,0 +1,7 @@
+package examen;
+
+class Caja{
+
+	private static numeroVenta = 0;
+	private int numeroCaja;
+}

@@ -1,0 +1,15 @@
+package examen;
+
+public class Mensaje {
+private String remitente;
+private String destinatario;
+private String cuerpo;
+private String documentoAsociado;
+private boolean urgente;
+
+public Mensaje (String remitente, String destinatario, String cuerpo, String documentoAsociado,
+				)
+
+
+
+}

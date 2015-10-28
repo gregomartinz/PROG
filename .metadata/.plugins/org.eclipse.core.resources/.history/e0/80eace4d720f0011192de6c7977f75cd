@@ -1,0 +1,8 @@
+/**
+ * @author Grego
+ */
+<script type="text/javascript"> 
+		$(document).ready(function(){
+			$('.footer').corners();
+		});
+	</script>

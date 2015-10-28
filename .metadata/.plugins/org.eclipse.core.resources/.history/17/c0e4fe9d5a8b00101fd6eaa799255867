@@ -1,0 +1,8 @@
+package multazos;
+
+public class GestorDeMultas {
+
+	public static final double MAX_VEL = 120;
+	private static final int TAMANO = 100;
+	private Registro[] tabla;
+}

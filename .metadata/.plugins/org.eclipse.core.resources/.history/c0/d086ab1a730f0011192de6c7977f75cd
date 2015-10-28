@@ -1,0 +1,8 @@
+/**
+ * @author Grego
+ */
+<script type="text/javascript"> 
+		$(document).ready(function(){
+			$('.divider1').corners();
+		});
+	</script>

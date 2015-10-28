@@ -1,0 +1,81 @@
+body{
+	background: #ffffff url('http://www.fondos10.net/wp-content/uploads/2008/10/nieve-1600-x-1200-300x225.jpg')repeat-x repeat-y;
+	padding: 35px 0px 35px 0px;
+
+
+table#myTweetsList {
+	/* Estilo del bloque */
+	position: relative;
+	width: 69%;
+	border: solid 7px #C0CF3A;
+	background-color: #35AB57;
+	margin: 0 auto;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	box-shadow: 1px 1px 10px #546B81;
+}
+	
+table#myTweetsList td {
+	/* Estilo de cada elemento*/                     
+      vertical-align:top; 
+}
+      
+table#myTweetsList td.text{
+      	/* Estilo del text del tweet*/
+      	text-align:center;
+}
+       	                 
+table#myTweetsList td.text a.ulr {
+	/* Estilo de los links dentro del tweet*/  
+	color:  #00FF00; 
+}
+
+table#myTweetsList td.text a.user{
+	/* Estilo de los links (@) dentro del tweet*/
+	color: #2E8B57;  
+}
+
+table#myTweetsList td.text a.hashtag{
+	/* Estilo de los links (#) dentro del tweet*/
+	color: #LightSeaGreen;
+}
+
+table#myTweetsList td.rt{
+	/* Estilo del link para retweetear*/ 
+}
+
+table#myTweetsList td.a.reply{
+	/* Estilo del link para responder */
+}
+
+table#myTweetsList td.name{
+	/* Estilo del nombre de cada tweet */
+    padding: 0px 20px;
+    font-weight:bold;
+}
+
+table#myTweetsList td.image{
+	/* Estilo de la imagen de cada tweet */
+	vertical-align:text-top;
+}
+
+table#myTweetsList td.audio{
+	/* Estilo del audio de cada tweet */
+	border-top: solid 1px #000000;
+	border-right: solid 1px #000000;
+	border-bottom: solid 1px #000000;
+	border-left: solid 1px #000000;
+}
+
+table#myTweetsList td.id{
+	/* Estilo del id de cada tweet */
+	display:none;
+}
+
+table#myTweetsList td.date{
+	/* Estilo de la fecha de crecion de cada tweet */ 
+	text-align: right;
+	text-decoration: underline;
+	color: #FFFFFF;
+	
+}

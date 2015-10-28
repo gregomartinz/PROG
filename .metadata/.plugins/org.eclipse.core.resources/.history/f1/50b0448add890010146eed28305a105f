@@ -1,0 +1,8 @@
+package es.upm.dit.prog.p5;
+
+import junit.framework.TestCase;
+
+public class RegionTest extends TestCase {
+
+	
+}

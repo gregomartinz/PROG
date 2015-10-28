@@ -1,0 +1,23 @@
+package aquinas;
+
+public class PruebaAlternativa {
+
+	/**
+	 * @param args
+	 * @throws Exception 
+	 */
+	public static void main(String[] args) throws Exception {
+		// TODO Auto-generated method stub
+		
+		Torre t = new Torre();
+		Habitacion h1 = new Habitacion (101,"");
+		Habitacion h2 = new Habitacion (112,"");
+		
+		HomHab h15 = new HomHab (h1,h2);
+		t.anadirHomHab(h15);
+		
+		t.toString();
+		
+	}
+
+}

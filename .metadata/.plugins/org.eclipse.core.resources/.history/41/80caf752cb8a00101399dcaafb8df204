@@ -1,0 +1,50 @@
+package aquinas;
+
+public class Pruebas {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		
+		Sorteo s15 = new Sorteo (15);
+		
+		Torre t = new Torre();
+		Habitacion cientoUno = new Habitacion (101);
+		
+		Personas pabloCruces = new Personas ("Pablo Cruces", 11);
+		Personas burbujita = new Personas ("Germán Orgueira", 3);
+		Personas pbloCruces = new Personas ("Po Cruces", 12);
+		Personas brbujita = new Personas ("Ger Orgueira", 3);
+		Personas a = new Personas ("ces", 12);
+		Personas b = new Personas ("ira", 3);
+		Personas c = new Personas ("Poya", 12);
+		Personas d = new Personas ("Ge", 3);
+		
+		Homologia pabloburbu = new Homologia (pabloCruces,burbujita);
+		Homologia competitiva = new Homologia (pbloCruces,brbujita);
+		Homologia as = new Homologia (a,b);
+		Homologia marca = new Homologia (c,d);
+		
+		s15.anadirHomología(competitiva);
+		s15.anadirHomología(pabloburbu);
+		s15.anadirHomología(as);
+		s15.anadirHomología(marca);
+		
+		
+		try{
+			s15.sortear();
+			s15.imprimeBienvenida();
+			s15.imprimeHomologosEnSorteo();
+			s15.imprimeResultados();
+			s15.imprimeDespedida();
+		}catch(Exception e){
+			
+		}
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,17 @@
+package es.upm.dit.prog.p5;
+
+
+public class RegionTest {
+
+	public void testBorrarAntena(){
+		Punto p1 = new Punto (10,10);
+		AntenaDireccional a1 = new AntenaDireccional(2,2,2,p1);
+		Region r1 = new Region();
+		try{
+			r1.anadirAntena(a1);
+			AssertEquals(1,r1.nAntenasEnRegion());
+		}catch(Exception e){
+			
+		}
+	}
+}

@@ -1,0 +1,19 @@
+package es.upm.dit.prog.p5;
+
+public class Pruebas {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Punto p1 = new Punto (10, 10);
+		AntenaDireccional a1 = new AntenaDireccional(2, 2, 2, p1);
+		Region reg = new Region ();
+		reg.anadirAntena(a1);
+		if(){
+			
+		}
+	}
+
+}

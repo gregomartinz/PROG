@@ -1,0 +1,311 @@
+package aquinas;
+
+import java.util.ArrayList;
+
+public class Torre  {
+
+	private ArrayList<HomHab> torre;
+	
+	public Torre () {
+
+		
+		torre = new ArrayList<HomHab>();
+		iniciarTorre();
+			
+	}
+	
+	public ArrayList<HomHab> getTorre (){
+		
+		return torre;
+		
+	}
+	
+	public void anadirHomHab(HomHab h){
+		
+		if (!torre.contains(h)){
+		torre.add(h);
+		}
+		else{
+			System.out.println("Esa habitación ya está creada");
+		}
+	}
+	
+	public void borrarHomHab(HomHab h){
+		if(torre.contains(h)){
+			torre.remove(h);
+		}
+		else{
+			System.out.println("Está habitación no está creada");
+		}
+	}
+	
+	public void inicializarPiso1(){
+		
+		Habitacion cientouno = new Habitacion (101, "");
+		Habitacion cientodos = new Habitacion (102,"") ;
+		Habitacion cientotres = new Habitacion (103,"");
+		Habitacion cientocuatro = new Habitacion (104,"");
+		Habitacion cientocinco = new Habitacion (105,"");
+		Habitacion cientoseis = new Habitacion (106,"");
+		Habitacion cientosiete = new Habitacion (107,"");
+		Habitacion cientoocho = new Habitacion (108,"");
+		Habitacion cientonueve = new Habitacion (109,"");
+		Habitacion cientodiez = new Habitacion (110,"");
+		Habitacion cientoonce = new Habitacion (111,"");
+		Habitacion cientodoce = new Habitacion (112,"");
+		
+		HomHab h11 = new HomHab (cientouno,cientodoce);
+		HomHab h12 = new HomHab (cientodos,cientoonce);
+		HomHab h13 = new HomHab (cientotres,cientodiez);
+		HomHab h14 = new HomHab (cientocuatro,cientonueve);
+		HomHab h15 = new HomHab (cientocinco,cientoocho);
+		HomHab h16 = new HomHab (cientoseis,cientosiete);
+		
+		torre.add(h11);
+		torre.add(h12);
+		torre.add(h13);
+		torre.add(h14);
+		torre.add(h15);
+		torre.add(h16);
+		
+		
+	}
+	
+	public void inicializarPiso2(){
+			
+			Habitacion doscientosuno = new Habitacion (201,"");
+			Habitacion doscientosdos = new Habitacion (202,"");
+			Habitacion doscientostres = new Habitacion (203,"");
+			Habitacion doscientoscuatro = new Habitacion (204,"");
+			Habitacion doscientoscinco = new Habitacion (205,"");
+			Habitacion doscientoseis = new Habitacion (206,"");
+			Habitacion doscientosiete = new Habitacion (207,"");
+			Habitacion doscientosocho = new Habitacion (208,"");
+			Habitacion doscientosnueve = new Habitacion (209,"");
+			Habitacion doscientosdiez = new Habitacion (210,"");
+			Habitacion doscientosonce = new Habitacion (211,"");
+			Habitacion doscientosdoce = new Habitacion (212,"");
+			
+			HomHab h21 = new HomHab (doscientosuno,doscientosdoce);
+			HomHab h22 = new HomHab (doscientosdos,doscientosonce);
+			HomHab h23 = new HomHab (doscientostres,doscientosdiez);
+			HomHab h24 = new HomHab (doscientoscuatro,doscientosnueve);
+			HomHab h25 = new HomHab (doscientoscinco,doscientosocho);
+			HomHab h26 = new HomHab (doscientoseis,doscientosiete);
+			
+			torre.add(h21);
+			torre.add(h22);
+			torre.add(h23);
+			torre.add(h24);
+			torre.add(h25);
+			torre.add(h26);
+		}
+	
+	public void inicializarPiso3(){
+		
+			Habitacion trescientosuno = new Habitacion (301,"");
+			Habitacion trescientosdos = new Habitacion (302,"");
+			Habitacion trescientostres = new Habitacion (303,"");
+			Habitacion trescientoscuatro = new Habitacion (304,"");
+			Habitacion trescientoscinco = new Habitacion (305,"");
+			Habitacion trescientoseis = new Habitacion (306,"");
+			Habitacion trescientosiete = new Habitacion (307,"");
+			Habitacion trescientosocho = new Habitacion (308,"");
+			Habitacion trescientosnueve = new Habitacion (309,"");
+			Habitacion trescientosdiez = new Habitacion (310,"");
+			Habitacion trescientosonce = new Habitacion (311,"");
+			Habitacion trescientosdoce = new Habitacion (312,"");
+			
+			HomHab h31 = new HomHab (trescientosuno,trescientosdoce);
+			HomHab h32 = new HomHab (trescientosdos,trescientosonce);
+			HomHab h33 = new HomHab (trescientostres,trescientosdiez);
+			HomHab h34 = new HomHab (trescientoscuatro,trescientosnueve);
+			HomHab h35 = new HomHab (trescientoscinco,trescientosocho);
+			HomHab h36 = new HomHab (trescientoseis,trescientosiete);
+			
+			torre.add(h31);
+			torre.add(h32);
+			torre.add(h33);
+			torre.add(h34);
+			torre.add(h35);
+			torre.add(h36);
+	}
+	
+	public void inicializarPiso4(){
+		
+		Habitacion cuatrocientosuno = new Habitacion (401,"");
+		Habitacion cuatrocientosdos = new Habitacion (402,"");
+		Habitacion cuatrocientostres = new Habitacion (403,"");
+		Habitacion cuatrocientoscuatro = new Habitacion (404,"");
+		Habitacion cuatrocientoscinco = new Habitacion (405,"");
+		Habitacion cuatrocientoseis = new Habitacion (406,"");
+		Habitacion cuatrocientosiete= new Habitacion (407,"");
+		Habitacion cuatrocientosocho = new Habitacion (408,"");
+		Habitacion cuatrocientosnueve = new Habitacion (409,"");
+		Habitacion cuatrocientosdiez = new Habitacion (410,"");
+		Habitacion cuatrocientosonce = new Habitacion (411,"");
+		Habitacion cuatrocientosdoce = new Habitacion (412,"");
+		
+		HomHab h41 = new HomHab (cuatrocientosuno,cuatrocientosdoce);
+		HomHab h42 = new HomHab (cuatrocientosdos,cuatrocientosonce);
+		HomHab h43 = new HomHab (cuatrocientostres,cuatrocientosdiez);
+		HomHab h44 = new HomHab (cuatrocientoscuatro,cuatrocientosnueve);
+		HomHab h45 = new HomHab (cuatrocientoscinco,cuatrocientosocho);
+		HomHab h46 = new HomHab (cuatrocientoseis,cuatrocientosiete);
+		
+		torre.add(h41);
+		torre.add(h42);
+		torre.add(h43);
+		torre.add(h44);
+		torre.add(h45);
+		torre.add(h46);
+	}
+	
+	public void inicializarPiso5(){
+		
+		Habitacion quinientosuno = new Habitacion (501,"");
+		Habitacion quinientosdos = new Habitacion (502,"");
+		Habitacion quinientostres = new Habitacion (503,"");
+		Habitacion quinientoscuatro = new Habitacion (504,"");
+		Habitacion quinientoscinco = new Habitacion (505,"");
+		Habitacion quinientoseis = new Habitacion (506,"");
+		Habitacion quinientosiete = new Habitacion (507,"");
+		Habitacion quinientosocho = new Habitacion (508,"");
+		Habitacion quinientosnueve = new Habitacion (509,"");
+		Habitacion quinientosdiez = new Habitacion (510,"");
+		Habitacion quinientosonce = new Habitacion (511,"");
+		Habitacion quinientosdoce = new Habitacion (512,"");
+		
+		HomHab h51 = new HomHab (quinientosuno,quinientosdoce);
+		HomHab h52 = new HomHab (quinientosdos,quinientosonce);
+		HomHab h53 = new HomHab (quinientostres,quinientosdiez);
+		HomHab h54 = new HomHab (quinientoscuatro,quinientosnueve);
+		HomHab h55 = new HomHab (quinientoscinco,quinientosocho);
+		HomHab h56 = new HomHab (quinientoseis,quinientosiete);
+		
+		torre.add(h51);
+		torre.add(h52);
+		torre.add(h53);
+		torre.add(h54);
+		torre.add(h55);
+		torre.add(h56);
+	}
+	
+	public void inicializarPiso6(){
+		
+		Habitacion seiscientosuno = new Habitacion (601,"");
+		Habitacion seiscientosdos = new Habitacion (602,"");
+		Habitacion seiscientostres = new Habitacion (603,"");
+		Habitacion seiscientoscuatro = new Habitacion (604,"");
+		Habitacion seiscientoscinco = new Habitacion (605,"");
+		Habitacion seiscientoseis = new Habitacion (606,"");
+		Habitacion seiscientosiete = new Habitacion (607,"");
+		Habitacion seiscientosocho = new Habitacion (608,"");
+		Habitacion seiscientosnueve = new Habitacion (609,"");
+		Habitacion seiscientosdiez = new Habitacion (610,"");
+		Habitacion seiscientosonce = new Habitacion (611,"");
+		Habitacion seiscientosdoce = new Habitacion (612,"");
+		
+		HomHab h61 = new HomHab (seiscientosuno,seiscientosdoce);
+		HomHab h62 = new HomHab (seiscientosdos,seiscientosonce);
+		HomHab h63 = new HomHab (seiscientostres,seiscientosdiez);
+		HomHab h64 = new HomHab (seiscientoscuatro,seiscientosnueve);
+		HomHab h65 = new HomHab (seiscientoscinco,seiscientosocho);
+		HomHab h66 = new HomHab (seiscientoseis,seiscientosiete);
+		
+		torre.add(h61);
+		torre.add(h62);
+		torre.add(h63);
+		torre.add(h64);
+		torre.add(h65);
+		torre.add(h66);
+	}
+	
+	public void inicializarPiso7(){
+		
+		Habitacion setecientosuno = new Habitacion (701,"");
+		Habitacion setecientosdos = new Habitacion (702,"");
+		Habitacion setecientostres = new Habitacion (703,"");
+		Habitacion setecientoscuatro = new Habitacion (704,"");
+		Habitacion setecientoscinco = new Habitacion (705,"");
+		Habitacion setecientoseis = new Habitacion (706,"");
+		Habitacion setecientosiete = new Habitacion (707,"");
+		Habitacion setecientosocho = new Habitacion (708,"");
+		Habitacion setecientosnueve = new Habitacion (709,"");
+		Habitacion setecientosdiez = new Habitacion (710,"");
+		Habitacion setecientosonce = new Habitacion (711,"");
+		Habitacion setecientosdoce = new Habitacion (712,"");
+		
+		HomHab h71 = new HomHab (setecientosuno,setecientosdoce);
+		HomHab h72 = new HomHab (setecientosdos,setecientosonce);
+		HomHab h73 = new HomHab (setecientostres,setecientosdiez);
+		HomHab h74 = new HomHab (setecientoscuatro,setecientosnueve);
+		HomHab h75 = new HomHab (setecientoscinco,setecientosocho);
+		HomHab h76 = new HomHab (setecientoseis,setecientosiete);
+		
+		torre.add(h71);
+		torre.add(h72);
+		torre.add(h73);
+		torre.add(h74);
+		torre.add(h75);
+		torre.add(h76);
+	}
+	
+	public void inicializarPiso8(){
+	
+	Habitacion ochocientosuno = new Habitacion (801,"");
+	Habitacion ochocientosdos = new Habitacion (802,"");
+	Habitacion ochocientostres = new Habitacion (803,"");
+	Habitacion ochocientoscuatro = new Habitacion (804,"");
+	Habitacion ochocientoscinco = new Habitacion (805,"");
+	Habitacion ochocientoseis = new Habitacion (806,"");
+	Habitacion ochocientosiete = new Habitacion (807,"");
+	Habitacion ochocientosocho = new Habitacion (808,"");
+	Habitacion ochocientosnueve = new Habitacion (809,"");
+	Habitacion ochocientosdiez = new Habitacion (810,"");
+	Habitacion ochocientosonce = new Habitacion (811,"");
+	Habitacion ochocientosdoce = new Habitacion (812,"");
+	
+	HomHab h81 = new HomHab (ochocientosuno,ochocientosdoce);
+	HomHab h82 = new HomHab (ochocientosdos,ochocientosonce);
+	HomHab h83 = new HomHab (ochocientostres,ochocientosdiez);
+	HomHab h84 = new HomHab (ochocientoscuatro,ochocientosnueve);
+	HomHab h85 = new HomHab (ochocientoscinco,ochocientosocho);
+	HomHab h86 = new HomHab (ochocientoseis,ochocientosiete);
+	
+	torre.add(h81);
+	torre.add(h82);
+	torre.add(h83);
+	torre.add(h84);
+	torre.add(h85);
+	torre.add(h86);
+}
+	
+	public void iniciarTorre(){
+		
+		inicializarPiso1();
+		inicializarPiso2();
+		inicializarPiso3();
+		inicializarPiso4();
+		inicializarPiso5();
+		inicializarPiso6();
+		inicializarPiso7();
+		inicializarPiso8();
+	}
+	
+	public void imprimirTorre(){
+		System.out.println(toString());
+	}
+
+	public String toString(){
+		
+	String s = "";
+	s = torre.toString();
+	return s ;
+	}
+	
+	public void setTorre(ArrayList<HomHab> torre){
+		this.torre = torre;
+		
+	}
+}

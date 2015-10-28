@@ -1,0 +1,45 @@
+/**
+ * 
+ */
+package es.upm.dit.prog.p5;
+
+
+import org.junit.After;
+import org.junit.Before;
+
+/**
+ * @author Grego
+ *
+ */
+public class RegionTest {
+
+	/**
+	 * @throws java.lang.Exception
+	 */
+	@Before
+	public void setUp() throws Exception {
+	}
+
+	/**
+	 * @throws java.lang.Exception
+	 */
+	@After
+	public void tearDown() throws Exception {
+	}
+	public void borrarAntenaTest(){
+		AntenaDireccional rad1 = new AntenaDireccional(2,2,2, new Punto (10,10));
+		AntenaDireccional rad2 = new AntenaDireccional (2,2,2, new Punto (3,3));
+		Region r1 = new Region ();
+		
+		try{
+			r1.anadirAntena(rad1);
+			r1.anadirAntena(rad2);
+			
+			assertEquals(rad1,r1.hayAntena(new Punto(10,10)));
+			
+		}catch(Exception e){
+		 System.out.println("salta excepción");
+		}
+	}
+
+}

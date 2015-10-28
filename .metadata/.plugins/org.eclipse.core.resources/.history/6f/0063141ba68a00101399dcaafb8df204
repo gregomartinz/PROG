@@ -1,0 +1,13 @@
+package examen;
+
+public class Escultura {
+
+	private boolean [][][] forma;
+	
+	public Escultura (boolean [][][]forma){
+		this.forma=forma;
+	}
+	public boolean [][][] getforma(){
+		return forma;
+	}
+}

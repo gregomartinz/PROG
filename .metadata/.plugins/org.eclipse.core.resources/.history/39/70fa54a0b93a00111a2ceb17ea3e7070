@@ -1,0 +1,63 @@
+body{
+	background: #ffffff url('../images/bg1.jpg');
+	padding: 35px 0px 35px 0px;
+}
+
+table#myTweetsList {
+	/* Estilo del bloque */
+	text-align:left;
+}
+	
+table#myTweetsList td {
+	/* Estilo de cada elemento*/                     
+      vertical-align:top; 
+}
+      
+table#myTweetsList td.text{
+      	/* Estilo del text del tweet*/   
+}
+       	                 
+table#myTweetsList td.text a.ulr {
+	/* Estilo de los links dentro del tweet*/    
+}
+
+table#myTweetsList td.text a.user{
+	/* Estilo de los links (@) dentro del tweet*/  
+}
+
+table#myTweetsList td.text a.hashtag{
+	/* Estilo de los links (#) dentro del tweet*/    
+}
+
+table#myTweetsList td.rt{
+	/* Estilo del link para retweetear*/ 
+}
+
+table#myTweetsList td.a.reply{
+	/* Estilo del link para responder */
+}
+
+table#myTweetsList td.name{
+	/* Estilo del nombre de cada tweet */
+    padding: 0px 20px;
+    font-weight:bold;
+}
+
+table#myTweetsList td.image{
+	/* Estilo de la imagen de cada tweet */
+	vertical-align:text-top;
+}
+
+table#myTweetsList td.audio{
+	/* Estilo del audio de cada tweet */
+}
+
+table#myTweetsList td.id{
+	/* Estilo del id de cada tweet */
+	display:none;
+}
+
+table#myTweetsList td.date{
+	/* Estilo de la fecha de crecion de cada tweet */ 
+	display:none;
+	}

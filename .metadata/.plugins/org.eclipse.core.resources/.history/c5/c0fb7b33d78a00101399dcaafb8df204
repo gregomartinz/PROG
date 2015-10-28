@@ -1,0 +1,177 @@
+package aquinas;
+
+import java.util.ArrayList;
+
+public class Torre  {
+
+	private ArrayList<Homologia> torre;
+	
+	public Torre () {
+
+		
+		torre = new ArrayList<Homologia>();
+		
+	}
+	public ArrayList<Homologia> getTorre (){
+		
+		return torre;
+		
+	}
+	
+	public void anadirHabitacion(Homologia h){
+		
+		if (!torre.contains(h)){
+		torre.add(h);
+		}
+		else{
+			System.out.println("Esa habitación ya está creada");
+		}
+	}
+	
+	public void borrarHabitacion(Habitacion h){
+		if(torre.contains(h)){
+			torre.remove(h);
+		}
+		else{
+			System.out.println("Está habitación no está creada");
+		}
+	}
+	
+	public void inicializarPiso1(){
+		
+		Habitacion cientouno = new Habitacion (101);
+		Habitacion cientodos = new Habitacion (102);
+		Habitacion cientotres = new Habitacion (103);
+		Habitacion cientocuatro = new Habitacion (104);
+		Habitacion cientocinco = new Habitacion (105);
+		Habitacion cientoseis = new Habitacion (106);
+		Habitacion cientosiete = new Habitacion (107);
+		Habitacion cientoocho = new Habitacion (108);
+		Habitacion cientonueve = new Habitacion (109);
+		Habitacion cientodiez = new Habitacion (110);
+		Habitacion cientoonce = new Habitacion (111);
+		Habitacion cientodoce = new Habitacion (112);
+	}
+	
+	public void inicializarPiso2(){
+			
+			Habitacion doscientosuno = new Habitacion (201);
+			Habitacion doscientosdos = new Habitacion (202);
+			Habitacion doscientostres = new Habitacion (203);
+			Habitacion doscientoscuatro = new Habitacion (204);
+			Habitacion doscientoscinco = new Habitacion (205);
+			Habitacion doscientoseis = new Habitacion (206);
+			Habitacion doscientosiete = new Habitacion (207);
+			Habitacion doscientosocho = new Habitacion (208);
+			Habitacion doscientosnueve = new Habitacion (209);
+			Habitacion doscientosdiez = new Habitacion (210);
+			Habitacion doscientosonce = new Habitacion (211);
+			Habitacion doscientosdoce = new Habitacion (212);
+		}
+	
+	public void inicializarPiso3(){
+		
+			Habitacion trescientosuno = new Habitacion (301);
+			Habitacion trescientosdos = new Habitacion (302);
+			Habitacion trescientostres = new Habitacion (303);
+			Habitacion trescientoscuatro = new Habitacion (304);
+			Habitacion trescientoscinco = new Habitacion (305);
+			Habitacion trescientoseis = new Habitacion (306);
+			Habitacion trescientosiete = new Habitacion (307);
+			Habitacion trescientosocho = new Habitacion (308);
+			Habitacion trescientosnueve = new Habitacion (309);
+			Habitacion trescientosdiez = new Habitacion (310);
+			Habitacion trescientosonce = new Habitacion (311);
+			Habitacion trescientosdoce = new Habitacion (312);
+	}
+	
+	public void inicializarPiso4(){
+		
+		Habitacion cuatrocientosuno = new Habitacion (401);
+		Habitacion cuatrocientosdos = new Habitacion (402);
+		Habitacion cuatrocientostres = new Habitacion (403);
+		Habitacion cuatrocientoscuatro = new Habitacion (404);
+		Habitacion cuatrocientoscinco = new Habitacion (405);
+		Habitacion cuatrocientoseis = new Habitacion (406);
+		Habitacion cuatrocientosiete= new Habitacion (407);
+		Habitacion cuatrocientosocho = new Habitacion (408);
+		Habitacion cuatrocientosnueve = new Habitacion (409);
+		Habitacion cuatrocientosdiez = new Habitacion (410);
+		Habitacion cuatrocientosonce = new Habitacion (411);
+		Habitacion cuatrocientosdoce = new Habitacion (412);
+	}
+	
+	public void inicializarPiso5(){
+		
+		Habitacion quinientosuno = new Habitacion (501);
+		Habitacion quinientosdos = new Habitacion (502);
+		Habitacion quinientostres = new Habitacion (503);
+		Habitacion quinientoscuatro = new Habitacion (504);
+		Habitacion quinientoscinco = new Habitacion (505);
+		Habitacion quinientoseis = new Habitacion (506);
+		Habitacion quinientosiete = new Habitacion (507);
+		Habitacion quinientosocho = new Habitacion (508);
+		Habitacion quinientosnueve = new Habitacion (509);
+		Habitacion quinientosdiez = new Habitacion (510);
+		Habitacion quinientosonce = new Habitacion (511);
+		Habitacion quinientosdoce = new Habitacion (512);
+	}
+	
+	public void inicializarPiso6(){
+		
+		Habitacion seiscientosuno = new Habitacion (601);
+		Habitacion seiscientosdos = new Habitacion (602);
+		Habitacion seiscientostres = new Habitacion (603);
+		Habitacion seiscientoscuatro = new Habitacion (604);
+		Habitacion seiscientoscinco = new Habitacion (605);
+		Habitacion seiscientoseis = new Habitacion (606);
+		Habitacion seiscientosiete = new Habitacion (607);
+		Habitacion seiscientosocho = new Habitacion (608);
+		Habitacion seiscientosnueve = new Habitacion (609);
+		Habitacion seiscientosdiez = new Habitacion (610);
+		Habitacion seiscientosonce = new Habitacion (611);
+		Habitacion seiscientosdoce = new Habitacion (612);
+	}
+	
+	public void inicializarPiso7(){
+		
+		Habitacion setecientosuno = new Habitacion (701);
+		Habitacion setecientosdos = new Habitacion (702);
+		Habitacion setecientostres = new Habitacion (703);
+		Habitacion setecientoscuatro = new Habitacion (704);
+		Habitacion setecientoscinco = new Habitacion (705);
+		Habitacion setecientoseis = new Habitacion (706);
+		Habitacion setecientosiete = new Habitacion (707);
+		Habitacion setecientosocho = new Habitacion (708);
+		Habitacion setecientosnueve = new Habitacion (709);
+		Habitacion setecientosdiez = new Habitacion (710);
+		Habitacion setecientosonce = new Habitacion (711);
+		Habitacion setecientosdoce = new Habitacion (712);
+	}
+	
+	public void inicializarPiso8(){
+	
+	Habitacion ochocientosuno = new Habitacion (801);
+	Habitacion ochocientosdos = new Habitacion (802);
+	Habitacion ochocientostres = new Habitacion (803);
+	Habitacion ochocientoscuatro = new Habitacion (804);
+	Habitacion ochocientoscinco = new Habitacion (805);
+	Habitacion ochocientoseis = new Habitacion (806);
+	Habitacion ochocientosiete = new Habitacion (807);
+	Habitacion ochocientosocho = new Habitacion (808);
+	Habitacion ochocientosnueve = new Habitacion (809);
+	Habitacion ochocientosdiez = new Habitacion (810);
+	Habitacion ochocientosonce = new Habitacion (811);
+	Habitacion ochocientosdoce = new Habitacion (812);
+}
+	
+	public void iniciaHomologia1(){
+		HomHab h1 = new HomHab (cientouno,cientodoce);
+		
+	}
+	
+	public void setTorre(ArrayList<Homologia> torre){
+		this.torre = torre;
+		
+	}
+}

@@ -1,0 +1,86 @@
+package es.upm.dit.prog.p5;
+
+
+
+/**
+ * The test class RegionTest.
+ *
+ * @author  (your name)
+ * @version (a version number or a date)
+ */
+public class RegionTest extends junit.framework.TestCase
+{
+       private es.upm.dit.prog.p5.Region region1;
+       private es.upm.dit.prog.p5.Punto punto1;
+       private es.upm.dit.prog.p5.AntenaDireccional antenaDi1;
+       private es.upm.dit.prog.p5.Punto punto2;
+       private es.upm.dit.prog.p5.AntenaDireccional antenaDi2;
+
+   /**
+    * Default constructor for test class RegionTest
+    */
+   public RegionTest()
+   {
+   }
+
+   /**
+    * Sets up the test fixture.
+    *
+    * Called before every test case method.
+    */
+   protected void setUp()throws Exception
+   {
+               region1 = new es.upm.dit.prog.p5.Region();
+               punto1 = new es.upm.dit.prog.p5.Punto(2, 2);
+               antenaDi1 = new es.upm.dit.prog.p5.AntenaDireccional(2, 2, 2, punto1);
+               region1.anadirAntena(antenaDi1);
+               punto2 = new es.upm.dit.prog.p5.Punto(3, 3);
+               antenaDi2 = new es.upm.dit.prog.p5.AntenaDireccional(3, 3, 3, punto2);
+               region1.anadirAntena(antenaDi2);
+               region1.toString();
+               region1.escribirFichero("Ramon.txt");
+       }
+
+   /**
+    * Tears down the test fixture.
+    *
+    * Called after every test case method.
+    */
+   protected void tearDown()
+   {
+   }
+
+   public void testEscribirFichero(){
+
+       Punto p1 = new Punto (2,2);
+       AntenaDireccional a1 = new AntenaDireccional (2,2,2,p1);
+
+       Region laRegion = new Region();
+
+       try{
+
+           laRegion.anadirAntena(a1);
+           assertEquals(a1, laRegion.hayAntena(p1));
+      }
+
+      catch (Exception e ) {
+
+          fail("No debería lanzar excepción");
+       }
+
+       try {
+
+           assertEquals(1, laRegion.nAntenasEnRegion());
+       }
+
+       catch (Exception e ){
+       }
+
+   }
+
+   public void leerFichero(){
+
+
+   }
+}
+

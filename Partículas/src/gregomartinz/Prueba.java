@@ -1,0 +1,29 @@
+package gregomartinz;
+
+import java.util.*;
+
+public class Prueba {
+
+	List <Onda> lista = new ArrayList<Onda> ();
+	
+	public static void imprimeOndas (List<Onda> lista){
+		
+		for(Onda objeto : lista){
+			System.out.println(objeto.getLongitud());
+		}
+	}
+	
+	public static void main (String[] args){
+		
+		List <Onda> lista = new ArrayList<Onda>();
+		
+		lista.add(new Particula(1,10,100));
+		lista.add(new Particula(2,20,200));
+		lista.add(new Particula(3,30,300));
+		lista.add(new Particula(4,40,400));
+		lista.add(new Particula(5,50,500));
+		
+		imprimeOndas(lista);
+		
+	}
+}

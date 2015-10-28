@@ -1,0 +1,22 @@
+package es.upm.dit.prog.p5;
+
+import java.io.IOException;
+
+public class Probar {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		Region r = new Region();
+		AntenaDireccional a1 = new AntenaDireccional(1,1,1, new Punto(1,1));
+		AntenaDireccional a2 = new AntenaDireccional(1,1,1, new Punto(10,10));
+		r.anadirAntena(a1);
+		r.anadirAntena(a2);
+		try{
+		r.escribirFichero("gaypu.txt");
+	}catch(IOException e){
+	}
+	}
+
+}

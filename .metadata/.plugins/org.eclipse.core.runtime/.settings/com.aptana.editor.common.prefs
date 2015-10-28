@@ -1,0 +1,11 @@
+#Wed Nov 23 17:01:39 CET 2011
+AbstractTextEditor.Color.Background.SystemDefault=false
+AbstractTextEditor.Color.Foreground.SystemDefault=false
+AbstractTextEditor.Color.Foreground=0,0,0
+currentLineColor=232,242,254
+AbstractTextEditor.Color.SelectionForeground.SystemDefault=false
+com.aptana.editor.common.characterPairColor=127,127,127
+AbstractTextEditor.Color.Background=255,255,255
+eclipse.preferences.version=1
+com.aptana.contenttype.css\:com.aptana.editor.common.selectedValidators=W3C Stylesheet Validator
+AbstractTextEditor.Color.SelectionForeground=180,213,255

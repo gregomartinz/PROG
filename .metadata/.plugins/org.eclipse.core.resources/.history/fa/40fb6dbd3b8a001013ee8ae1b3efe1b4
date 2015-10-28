@@ -1,0 +1,9 @@
+package examen;
+
+public class NoTieneSaldo extends Cajero{
+	NoTieneSaldo(int saldo) {
+		super(Integer.toString(saldo);
+	}
+	
+	
+}

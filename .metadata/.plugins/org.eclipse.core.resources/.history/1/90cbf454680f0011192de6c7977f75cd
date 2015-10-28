@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es-es" lang="es-es">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>Frutería la Fresa</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link rel="stylesheet" type="text/css" href="default.css" />
+	
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.js"></script>
+	<script type="text/javascript" src="scripts/jquery.corners.js"></script>
+
+</head>
+<body>
+	
+	<script type="text/javascript"> 
+		$(document).ready(function(){
+			$('.secondarycontent').corners();
+		});
+	</script>
+	
+<div id="upbg"></div>
+
+<div id="outer">
+	
+	<div id="headerpic"></div>
+	
+	<!-- Buscador			inicio-->
+	<div id="buscador">
+		<form method="post" action="">
+			<div id="search">
+				<input type="text" class="text" maxlength="64" name="keywords" />
+				<input type="submit" class="submit" value="Search" />
+			</div>
+		</form>
+	</div>	
+	<!-- Buscador			fin-->
+	
+	<!-- Menú			inicio-->
+	<div id="menu">		
+		<ul>
+			<li><a href="#"class="active">Home</a></li>
+			<li><a href="#">Avisos</a></li>
+			<li><a href="#">Productos</a></li>
+			<li><a href="#">Tiendas</a></li>
+			<li><a href="#">Usuario</a></li>
+			<li><a href="#">Contacto</a></li>
+		</ul>
+	</div>	
+	<div id="menubottom"></div>
+	<!-- Menú			fin-->
+
+	<!-- Contenido de la página			empieza-->
+	<div id="content">
+		<!-- Parte superior del cuerpo			empieza -->
+		<div id="normalcontent">
+			<h3>Home</h3>
+			<div class="contentarea">
+				<p>Página principal de esta frutería, desde aquí podrás acceder a los distintos apartados de los que se compone esta web.</p>	
+			</div>
+		</div>
+		<!-- Parte superior del cuerpo    fin -->
+
+	
+		<div class="divider1"></div>
+
+
+		<!-- Parte izquierda del cuerpo			inicio-->
+		<div id="primarycontainer">
+			<!--Entradas de información			inicio-->
+			<div id="primarycontent">
+				
+		
+				<div class="post">
+					<h4>Lorem Ipsum Veroeros</h4>
+					<div class="contentarea">
+						<div class="details"></div>	
+						<p>Volutpat at varius sed sollicitudin et, arcu. Vivamus viverra. Nullam turpis. Vestibulum sed etiam. Lorem ipsum sit amet dolore. Nulla facilisi. Sed tortor. Aenean felis. Quisque eros. Cras lobortis commodo metus. Vestibulum vel purus. In eget odio in sapien adipiscing blandit. Quisque augue tortor, facilisis sit amet, aliquam, suscipit vitae, cursus sed, arcu lorem ipsum dolor sit amet.</p>
+					</div>
+				</div>
+		
+				<div class="divider2"></div>
+		
+				<div class="post">
+					<h4>Consequat Odio Vestibulum</h4>
+					<div class="contentarea">
+						<div class="details"></div>	
+						<img src="images/pic3.jpg" class="left" alt="A chinese dragon" />
+						<p>Aenean felis quisque eros. Cras lobortis commodo lorem ipsum dolor. Vestibulum vel purus. In eget odio in sapien adipiscing blandit. Lorem ipsum dolor sit amet consequat etiam sed dolore.</p>
+					</div>
+				</div>
+	
+				<div class="divider2"></div>
+		
+				<div class="post">
+					<h4>Adipiscing Nullam</h4>
+					<div class="contentarea">
+						<div class="details"></div>	
+						<p>Eget odio in sapien adipiscing blandit. Quisque augue tortor, facilisis sit amet, aliquam, suscipit vitae, cursus sed, arcu lorem ipsum dolor sit amet felis quisque eros. Cras lobortis commodo lorem ipsum dolor. Vestibulum vel purus. In eget odio in sapien adipiscing blandit. Quisque augue tortor, facilisis sit amet, aliquam, suscipit lorem ipsum dolor.</p>
+					</div>
+				</div>
+
+
+			</div>
+			<!--Entradas de información			fin-->
+		</div>
+		<!-- Parte izquierda del cuerpo			fin-->
+
+		
+		<!-- Columna derecha			inicio -->
+		<div id="secondarycontent">			
+			<!-- Login			inicio -->
+			<div class="box">
+				<h4>Log in</h4>
+				<div class="contentarea">
+					<form method="post" action="">
+  						<p>Username: <input type="text" name="username" size="15"> </br> </p>
+ 						<p>Contraseña: <input type="password" name="passwort" size="15"> </br> </p>
+  						<div id="user">
+    						<p><input type="submit" value="Login" /></p>
+  						</div>
+					</form>
+				</div>
+			</div>
+			<!-- Login			fin -->
+		</div>
+		<!-- Columna derecha			fin -->
+	</div
+	<!-- Contenido de la página			fin -->
+
+	<!--Pie de página			inicio-->
+	<div id="footer">
+			<div class="left">&copy; 2011 fruterialafresa.es. All rights reserved.</div>
+			<div class="right">Design by Gregorio Martínez Luque</div>
+	</div>
+	<!--Pie de página			fin-->
+	
+</div>
+
+</body>
+</html>

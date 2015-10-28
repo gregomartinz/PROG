@@ -1,0 +1,30 @@
+/**
+ * 
+ */
+package es.upm.dit.prog.p5;
+
+
+import org.junit.After;
+import org.junit.Before;
+
+/**
+ * @author Grego
+ *
+ */
+public class RegionTest {
+
+	/**
+	 * @throws java.lang.Exception
+	 */
+	@Before
+	public void setUp() throws Exception {
+	}
+
+	/**
+	 * @throws java.lang.Exception
+	 */
+	@After
+	public void tearDown() throws Exception {
+	}
+
+}

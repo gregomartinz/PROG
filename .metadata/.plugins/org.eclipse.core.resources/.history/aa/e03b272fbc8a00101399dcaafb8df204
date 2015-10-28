@@ -1,0 +1,48 @@
+package once;
+
+import java.util.ArrayList;
+
+public class Prueba {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		Personas Grego = new Personas("Grego 8==D", 0);
+		Personas Nicolas = new Personas("Nicolas 8==D", 1);
+		Personas Guille = new Personas("Guille 8==D", 2);
+		Personas Adri = new Personas("Adri 8====D", 3);
+		Personas Pedro = new Personas("Pedro 8==D", 4);
+		Personas Gaypu = new Personas("Gaypu 8=D", 5);
+		Personas Polo = new Personas("Polo 8==D", 6);
+		Personas Eminem = new Personas("Eminem 8==D", 7);
+		Personas Jeni = new Personas("Saah moreEniiikahH Jenihhhh ( . Y . )", 8);
+		Personas Sheila= new Personas("ツ♪♬♪ SнeeEιℓa ♠* (   .   Y   .   )", 9);
+		Personas Barbara = new Personas ("Barbara (.Y.)", 10);
+		
+	
+		Sorteo coche = new Sorteo();		
+		
+		coche.anadirPersonas(Grego);
+		coche.anadirPersonas(Nicolas);
+		coche.anadirPersonas(Guille);
+		coche.anadirPersonas(Adri);
+		coche.anadirPersonas(Pedro);
+		coche.anadirPersonas(Gaypu);
+		coche.anadirPersonas(Polo);
+		coche.anadirPersonas(Eminem);
+		coche.anadirPersonas(Jeni);
+		coche.anadirPersonas(Sheila);
+		coche.anadirPersonas(Barbara);	
+		
+		
+		coche.imprimeBienvenida();
+		coche.imprimePersonas();
+		coche.sortear();
+		coche.imprimeResultados();
+		coche.imprimeDespedida();
+				
+		
+	}
+
+}

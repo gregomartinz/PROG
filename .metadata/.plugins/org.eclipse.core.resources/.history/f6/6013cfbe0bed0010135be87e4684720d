@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<title>Noticias de Teleco</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!-- Enlace a la hoja de estilos que da un formato bÃ¡sico de la pÃ¡gina, no hay que modificarla. -->
+	<link rel="stylesheet" type="text/css" href="noticias_basico.css" title="style" />
+	
+	<!-- Enlace a tu hoja de estilos, noticias_layout.css -->
+	<link rel="stylesheet" type="text/css" href="noticias_layout.css" title="style" />
+</head>
+
+<body>
+
+	<div>
+	<h1>Noticias de Teleco</h1>
+	<h2>Lo que pasa en la escuela</h2>
+
+	<h2>19/11/10: Movilidad</h2>
+	<p>
+		<img src="alumnos.jpg" alt="Alumnos con portatil" />
+	</p>
+
+	<p>
+               La ETSIT-UPM apuesta por la movilidad internacional de los estudiantes. Acuerdos bilaterales entre la ETSIT y los centros mÃ¡s prestigiosos de los cinco continentes. Programas de doble titulaciÃ³n y otros como SÃ³crates/LLP (Erasmus), Magalhaes/Smile o Athens son las opciones que los estudiantes de Ãºltimos cursos eligen para completar su formaciÃ³n en el extranjero. La oferta de movilidad para el curso 2010/2011 incluirÃ¡ la posibilidad de que las estancias en las universidades de destino se realicen no sÃ³lo por un aÃ±o, como hasta ahora, sino tambiÃ©n por semestres, con el objetivo de poder reconocer crÃ©ditos optativos de la titulaciÃ³n.
+	</p>
+
+	<h2>20/07/10: Â¡Bienvenidos a la Escuela!</h2>
+	<p>
+		<img src="aereo.jpg" alt="Vista aerea de la ETSI TelecomunicaciÃ³n" />
+	</p>
+
+	<p>
+		Queremos daros la bienvenida a los 340 nuevos estudiantes admitidos en la ETSI de TelecomunicaciÃ³n de la Universidad PolitÃ©cnica de Madrid.
+	</p>
+	<p> 
+	      Bienvenidos a los 340 nuevos estudiantes admitidos en la Escuela TÃ©cnica Superior de Ingenieros de TelecomunicaciÃ³n de la Universidad        PolitÃ©cnica de Madrid. 
+	</p>
+	
+	</div>
+	
+	<p>
+		<a href="http://validator.w3.org/check/referer">
+			<img src="http://www.w3.org/Icons/valid-xhtml11" alt="Valid XHTML" />
+		</a>
+		<a href="http://jigsaw.w3.org/css-validator/check/referer">
+			<img src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS" />
+		</a>
+	</p>
+</body>
+
+</html>

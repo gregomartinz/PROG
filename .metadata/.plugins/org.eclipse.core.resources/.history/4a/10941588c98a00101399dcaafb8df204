@@ -1,0 +1,25 @@
+package aquinas;
+
+public class Pruebas {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		Sorteo s12 = new Sorteo(12);
+		Sorteo s11 = new Sorteo(11);
+		Sorteo s10 = new Sorteo(10);
+		Sorteo s9 = new Sorteo(9);
+		Sorteo s8 = new Sorteo(8);
+		Sorteo s7 = new Sorteo(7);
+		Sorteo s6 = new Sorteo(6);
+		Sorteo s5 = new Sorteo(5);
+		Sorteo s4 = new Sorteo(4);
+		Sorteo s3 = new Sorteo(3);
+		Sorteo s2 = new Sorteo(2);
+		
+		Personas pabloCruces = new Personas ("Pablo Cruces", 1, )
+	}
+
+}

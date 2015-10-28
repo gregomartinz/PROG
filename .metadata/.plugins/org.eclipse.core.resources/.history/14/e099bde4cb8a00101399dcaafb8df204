@@ -1,0 +1,138 @@
+package aquinas;
+
+import java.util.ArrayList;
+import java.util.Random;
+/**
+ * 
+ * @author Grego y Nico
+ *
+ *@version 0.1 (alph@)
+ */
+public class Sorteo {
+	
+	private ArrayList <Homologia> homologos;
+	private ArrayList <Homologia> homologosConHabitacion;
+	private ArrayList <Homologia> homologosEnSorteo;
+	private Random aleatorio;
+	private Random semilla;
+	private int prioridadActual;
+	
+	public Sorteo (int prioridadActual){
+		homologos = new ArrayList<Homologia>();
+		homologosConHabitacion = new ArrayList<Homologia>();
+		homologosEnSorteo = new ArrayList<Homologia>();
+		semilla = new Random ();
+		aleatorio = new Random (semilla.nextInt());
+		this.prioridadActual = prioridadActual;
+	}
+	
+	public void anadirHomología(Homologia p){
+		homologos.add(p);
+	}
+	
+	
+		
+		
+	public void sortear()throws Exception{
+		
+		
+		
+		int tamano = homologosEnSorteo.size()+1;
+		
+		for(Homologia h : homologos){
+			
+			if( h.getPuntosHomologia() == prioridadActual ){
+				homologosEnSorteo.add(h);
+			}
+		}		
+		// A partir de aquí ya tenemos el arrayList para sortearlo.
+		
+		
+		
+		
+		for(;;){
+			int i = aleatorio.nextInt(tamano);
+			if(!homologosConHabitacion.contains(homologosEnSorteo.get(i))){
+				homologosConHabitacion.add(homologosEnSorteo.get(i));
+			}
+			else{
+				continue;
+			}			
+			if(homologosConHabitacion.size()==tamano){
+				return;
+			}		
+		}
+	}
+	
+	public void imprimeResultados(){
+		
+		System.out.println("Comienzan en 3...");
+		
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+		}
+		
+		System.out.println(" 2...");
+		
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+		}
+		
+		System.out.println(" 1...");
+		
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+		}
+		
+		System.out.println("Los ganadores son:");
+		
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+		}
+		
+		for(Homologia objeto : homologosConHabitacion){		
+			
+			System.out.println(objeto.toString());
+			try {
+				Thread.sleep(2000);
+			}catch (InterruptedException e) {
+			}
+		}
+	}
+	
+	public void imprimeHomologosEnSorteo(){
+		System.out.println("Los participantes son:");
+		
+		for(Homologia objeto : homologosEnSorteo){
+			System.out.println(objeto.toString());
+			try {
+				Thread.sleep(500);
+			}catch (InterruptedException e) {
+			}
+		}
+		System.out.println("\n");
+	}
+	
+	public void imprimeBienvenida(){
+		
+		System.out.println("Sorteo Homologías del AQUINAS 2011-2012");
+		System.out.println("   ================================    ");
+	}
+	
+	public void imprimeDespedida(){
+		System.out.println("*****************************************");
+		System.out.println("=========================================");
+		System.out.println("*****************************************");
+	}
+	
+	
+	
+	public String toString() {
+        String resultado = "";        
+        return resultado;
+    }
+}

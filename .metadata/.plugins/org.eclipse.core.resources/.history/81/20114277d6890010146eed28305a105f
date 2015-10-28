@@ -1,0 +1,20 @@
+package es.upm.dit.prog.p5;
+
+public class Pruebas {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		Punto p1 = new Punto (10,10);
+		Punto p2 = new Punto (102,102);
+		AntenaDireccional a1 = new AntenaDireccional(2,2,2,p1);
+		Region r1 = new Region();
+		
+		r1.anadirAntena(a1);
+		System.out.println("Hay "  + r1.nAntenasEnRegion()  + " antena en región");
+		
+		r1.borrarAntena(p1);
+		System.out.println("Hay " + r1.nAntenasEnRegion() + " en región");
+	}
+}

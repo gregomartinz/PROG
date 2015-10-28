@@ -1,0 +1,5 @@
+package gregomartinz;
+
+public interface Corpusculo {
+
+}

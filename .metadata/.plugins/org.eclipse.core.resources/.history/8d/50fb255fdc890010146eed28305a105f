@@ -1,0 +1,21 @@
+package es.upm.dit.prog.p5;
+
+import junit.framework.TestCase;
+
+public class RegionTest extends TestCase {
+
+	public void borrarAntenaTest(){
+		AntenaDireccional rad1 = new AntenaDireccional(2,2,2, new Punto (10,10));
+		Radiante rad2 = new AntenaDireccional (2,2,2, new Punto (3,3));
+		Region r1 = new Region ();
+		
+		try{
+			r1.anadirAntena(rad1);
+			
+			assertEquals(rad1,r1.hayAntena(new Punto(10,10)));
+			
+		}catch(Exception e){
+		
+		}
+	}
+}

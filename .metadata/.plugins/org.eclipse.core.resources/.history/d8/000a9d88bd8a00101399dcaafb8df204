@@ -1,0 +1,17 @@
+package once;
+
+public class Homologia {
+
+	private Personas homologo1;
+	private Personas homologo2;
+	private int puntosHomologia;
+	
+	public Homologia(Personas homologo1, Personas homologo2) {
+				
+		this.homologo1=homologo1;
+		this.homologo2=homologo2;
+		this.puntosHomologia=
+	}
+	
+
+}

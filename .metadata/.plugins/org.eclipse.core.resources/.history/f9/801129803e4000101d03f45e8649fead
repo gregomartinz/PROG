@@ -1,0 +1,21 @@
+package temperatura;
+/**
+* Control de temperatura.
+* @author Gregorio Martínez Luque
+* @version 0.1
+*/
+
+public class Temperatura {
+	
+	public double temperatura;
+	public double minima;
+	public double maxima;
+	public int incremento;
+	
+	
+	public static void main(String[] args) {
+		
+	}
+	}
+		
+	}

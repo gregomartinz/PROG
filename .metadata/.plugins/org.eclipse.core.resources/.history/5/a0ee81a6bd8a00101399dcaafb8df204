@@ -1,0 +1,47 @@
+package once;
+
+public class Personas {
+
+	private String nombre;
+	private int numSorteo;
+	private int puntos;
+	
+	public Personas (String nombre, int numSorteo, int puntos){
+		this.nombre=nombre;
+		this.numSorteo=numSorteo;
+		this.puntos=puntos;
+	}
+	
+	public String getNombre(){
+		return nombre;
+	}
+	
+	public void setNombre (String nombre){
+		this.nombre=nombre;
+	}
+	
+	public int getPuntos(){
+		return puntos;
+	}
+	
+	public void setPuntos(int puntos){
+		this.puntos=puntos;
+	}
+	
+	public int getNumSorteo(){
+		return numSorteo;
+	}
+	
+	public void setNumSorteo(int numSorteo){
+		this.numSorteo=numSorteo;
+	}
+	
+	public String toString() {
+
+        String resultado = "";
+        
+        resultado =  getNombre() + "---->Numero de Sorteo:  " +getNumSorteo();
+        
+        return resultado;
+    }
+}

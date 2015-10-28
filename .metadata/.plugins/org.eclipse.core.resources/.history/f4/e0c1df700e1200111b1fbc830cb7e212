@@ -1,0 +1,172 @@
+<!DOCTYPE html> 
+<html> 
+        <head> 
+        <title>FruterÃƒÂ­a la Fresa</title> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0rc2/jquery.mobile-1.0rc2.min.css" />
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/mobile/1.0rc2/jquery.mobile-1.0rc2.min.js"></script>
+        <link rel="apple-touch-icon" href="iphone-icon.png" />
+</head> 
+<body> 
+
+<!-- Página inicial -->
+<div data-role="page" id="menu" data-theme="e">
+
+	<div data-role="header">
+		<h1>Fruteria la fresa</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">
+             <ul data-role="listview" data-inset="true">	
+				<li><a href="#localizacion" data-role="button">Localización</a></li>
+				<li><a href="#contacto" data-role="button">Contacto</a></li>
+				<li><a href="#oferta" data-role="button">Ofertas</a></li>
+             </ul>
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<h3>No olvides visitar nuestra web: www.fruterialafresa.es</h3>
+		<h4>@2011 fruterialafresa.es</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+<!-- PÃƒÆ’Ã‚Â¡gina de localizaciÃƒÆ’Ã‚Â³n -->
+<div data-role="page" id="localizacion" data-theme="e">
+
+	<div data-role="header">
+		<h1>Localización</h1>
+	</div><!-- /header -->
+		
+	<div data-role="content">
+             <ul data-role="listview">			
+		  <li><a href="#mapa">Mapa</a></li>
+		  <li><a href="#postal">Dirección postal</a></li>
+		  <li><a href="#menu" data-direction="reverse" data-role="button">Inicio</a> </li>
+             </ul>
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<h4>@2011 fruterialafresa.es</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+<!-- localizaciÃƒÆ’Ã‚Â³n/Mapa -->
+<div data-role="page" id="mapa" data-theme="e">
+
+	<div data-role="header">
+		<h1>¿Dónde nos puedes encontrar?</h1>
+	</div><!-- /header -->
+		
+	<div data-role="content">	
+	  <p>Estamos situados en la Calle Bellavista en el número 28.</p>
+	  <p>EN CONSTRUCIÓN</p>
+      <img src="images/googlemaps.jpg" />
+      <a href="#menu" data-direction="reverse" data-role="button">Inicio</a>
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<h4>@2011 fruterialafresa.es</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+<!-- localizaciÃƒÆ’Ã‚Â³n/Postal -->
+<div data-role="page" id="postal" data-theme="e">
+
+	<div data-role="header">
+		<h1>Aquí tienes la dirección completa de la tienda</h1>
+	</div><!-- /header -->
+		
+	<div data-role="content" class="ui-grid-a">
+	    
+		<p>Calle Bellavista nº 8</p>
+	    <p>Córdoba - 41008 	</p>
+		<a href="#menu" data-direction="reverse" data-role="button">Inicio</a>
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<h4>@2011 fruterialafresa.es</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+<!-- PÃƒÆ’Ã‚Â¡gina de contacto -->
+<div data-role="page" id="contacto" data-theme="e">
+
+	<div data-role="header">
+		<h1>Ponte en contacto con nosotros</h1>
+	</div><!-- /header -->
+		
+	<div data-role="content">
+             <ul data-role="listview">			
+		  <li><a href="#tel">TelÃƒÆ’Ã‚Â©fono</a></li>
+		  <li><a href="#mail">Correo electrÃƒÆ’Ã‚Â³nico</a></li>
+		  <li><a href="#menu" data-direction="reverse" data-role="button">Inicio</a> </li>
+             </ul>
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<h4>@2011 fruterialafresa.es</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+<!-- contacto/telÃƒÆ’Ã‚Â©fono -->
+<div data-role="page" id="tel" data-theme="e">
+	<div data-role="header">
+		<h1>Estos son los distintos telÃƒÆ’Ã‚Â©fonos a los que puedes llamar</h1>
+	</div><!-- /header -->		
+	<div data-role="content" class="ui-grid-a">
+	    
+		<p>66666666666666 - Paco</p>		
+	    <p>9389340985 - Tienda - De 9:00 a 21:00	</p>
+	    
+	    <a href="#menu" data-direction="reverse" data-role="button">Inicio</a>          
+	</div><!-- /content -->
+	<div data-role="footer">
+		<h4>@2011 fruterialafresa.es</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+<!-- contacto/email -->
+<div data-role="page" id="mail" data-theme="e">
+	<div data-role="header">
+		<h1>Estos son los distintos correos de los que disponemos</h1>
+	</div><!-- /header -->		
+	<div data-role="content" class="ui-grid-a">
+	    
+		<p>pacopaquito@jajajaja.com</p>		
+	    <p>pacopaquete@jejeje.com</p>
+	    <a href="#menu" data-direction="reverse" data-role="button">Inicio</a>           
+	</div><!-- /content -->
+	<div data-role="footer">
+		<h4>@2011 fruterialafresa.es</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+<!-- oferta -->
+<div data-role="page" id="oferta" data-theme="e">
+
+	<div data-role="header">
+		<h1>Ofertas</h1>
+	</div><!-- /header -->
+		
+	<div data-role="content">
+		<a href="http://www.etsit.upm.es"  data-role="button" target="_blank">Patatas</a>
+		<a href="http://www.upm.es"  data-role="button">Naranjas</a>
+		<a href="http://dat.etsit.upm.es" data-role="button">Peras</a>
+		  <li><a href="#menu" data-direction="reverse" data-role="button">Inicio</a>
+	</div>
+	<div data-role="footer">
+		<h4>@2011 fruterialafresa.es</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+
+
+	<div data-role="footer">
+		<h4>@2011 fruterialafresa.es</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+</body>
+</html>

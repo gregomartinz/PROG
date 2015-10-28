@@ -1,0 +1,75 @@
+package once;
+import java.util.*;
+import java.lang.*;
+
+public class Sorteo {
+	
+	private ArrayList <Personas> gente;
+	private ArrayList <Personas> premiados;
+	private Random aleatorio;
+	private Random semilla;
+	public Sorteo (){
+		gente = new ArrayList<Personas>();
+		premiados = new ArrayList<Personas>();
+		semilla = new Random ();
+		aleatorio = new Random (semilla.nextInt());
+	}
+	
+	public void anadirPersonas(Personas p){
+		gente.add(p);
+	}
+	
+	public void sortear(){
+		
+		
+		
+		int contador = 4;
+		for(;;){
+			int i = aleatorio.nextInt(gente.size()+1);
+			if(!premiados.contains(gente.get(i))){
+				premiados.add(gente.get(i));
+				}
+			else{
+				continue;
+				}
+			
+			if(premiados.size()==contador){
+				
+				return;
+			}		
+		}
+	}
+	public void imprimeResultados(){
+		for(Personas afortunados : premiados){
+		System.out.println(afortunados.toString());
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+		}
+		}
+	}
+	public void imprimePersonas(){
+		for(Personas objeto : gente){
+			System.out.println(objeto.toString());
+		}
+	}
+	
+	public void imprimeBienvenida(){
+		
+		System.out.println("♥¤ вιeηVEηιdooo aAaℓ sιsтEeeмAh de sOrтeOS ¤");
+		System.out.println("===============( . Y . )=================");
+	}
+	
+	
+	
+	public String toString() {
+
+        String resultado = "";
+
+        
+        
+        
+        return resultado;
+    }
+
+}

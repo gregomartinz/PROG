@@ -1,0 +1,53 @@
+package once;
+import java.util.*;
+
+public class Sorteo {
+	
+	private ArrayList <Personas> gente;
+	private ArrayList <Personas> premiados;
+	private Random aleatorio;
+	
+	public Sorteo (){
+		gente = new ArrayList<Personas>();
+		premiados = new ArrayList<Personas>();
+		aleatorio = new Random ();
+	}
+	
+	public void anadirPersonas(Personas p){
+		gente.add(p);
+	}
+	
+	public void sortear(){
+		
+		
+		
+		int contador = 4;
+		for(Personas objeto : gente){
+			if(objeto.getNumSorteo()==aleatorio.nextInt(10)){
+				premiados.add(objeto);
+				System.out.println(premiados.toString());
+				
+				
+			}			
+		}
+	}
+	
+	public void imprimePersonas(){
+		for(Personas objeto : gente){
+			System.out.println(objeto.toString());
+		}
+	}
+	
+	
+	
+	public String toString() {
+
+        String resultado = "";
+
+        
+        
+        
+        return resultado;
+    }
+
+}

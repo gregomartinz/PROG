@@ -1,0 +1,14 @@
+package examen;
+
+public class Cajero {
+
+	private int saldo;
+	
+	void retirar (int saldo){
+		int cantidad;
+		if(cantidad>saldo){
+			throw new NoTieneSaldo(saldo);
+		}
+		saldo-=cantidad;
+	}
+}

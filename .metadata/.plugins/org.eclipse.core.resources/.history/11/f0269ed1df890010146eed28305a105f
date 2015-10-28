@@ -1,0 +1,73 @@
+package es.upm.dit.prog.p5;
+
+import es.upm.dit.prog.p5.AntenaDireccional;
+import es.upm.dit.prog.p5.Punto;
+
+
+
+/**
+ * The test class RegionTest.
+ *
+ * @author  (your name)
+ * @version (a version number or a date)
+ */
+public class RegionTest extends junit.framework.TestCase
+{
+       private es.upm.dit.prog.p5.Region region1;
+       private es.upm.dit.prog.p5.Punto punto1;
+       private es.upm.dit.prog.p5.AntenaDireccional antenaDi1;
+       private es.upm.dit.prog.p5.Punto punto2;
+       private es.upm.dit.prog.p5.AntenaDireccional antenaDi2;
+
+  
+   public RegionTest(){
+   }   
+   protected void setUp()throws Exception{
+   }   
+   protected void tearDown(){
+   }
+
+   public void testBorrarAntena(){
+
+       Punto p1 = new Punto (2,2);
+       Punto p2 = new Punto (10,10);
+       Punto p3 = new Punto (20,20);
+       Punto p4 = new Punto (30,30);
+       Punto p5 = new Punto (101,101);
+       Punto p6 = new Punto (40,40);
+       Punto p7 = new Punto (50,50);
+       Punto p9 = new Punto (102,102);
+       AntenaDireccional a1 = new AntenaDireccional (1,1,1,p1);
+       AntenaDireccional a2 = new AntenaDireccional (1,1,1,p2);
+       AntenaDireccional a3 = new AntenaDireccional (1,1,1,p3);
+       AntenaDireccional a3_1= new AntenaDireccional(1,1,3,p3);
+       AntenaDireccional a4 = new AntenaDireccional (1,1,1,p4);
+       AntenaDireccional a5 = new AntenaDireccional (1,1,1,p4);
+       AntenaDireccional a6 = new AntenaDireccional (1,1,1,p9);
+       AntenaDireccional a7 = new AntenaDireccional (1,1,1,p6);
+       AntenaDireccional a8 = new AntenaDireccional (1,1,1,p7);
+
+       Region r = new Region();
+
+       try{
+           r.anadirAntena(a1);
+       
+           assertEquals(2, r.hayAntena(p1));
+      }catch (Exception e ) {
+          fail("No debería lanzar excepción");
+       }
+
+       try {
+    	 r.borrarAntena(p1);
+           assertEquals(0, r.nAntenasEnRegion());
+       } catch (Exception e ){
+       }
+
+   }
+
+   public void leerFichero(){
+
+
+   }
+}
+

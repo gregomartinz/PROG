@@ -1,0 +1,6 @@
+/**
+ * @author Grego
+ */
+$(document).ready(function(){
+	$('.divider1').corner();
+	});
